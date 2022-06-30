@@ -14,6 +14,7 @@
 		BD5CC015286B8FBC00FE7575 /* empowerHour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD5CC013286B8FBC00FE7575 /* empowerHour.xcdatamodeld */; };
 		BD5CC017286B8FBD00FE7575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5CC016286B8FBD00FE7575 /* Assets.xcassets */; };
 		BD5CC01A286B8FBD00FE7575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5CC018286B8FBD00FE7575 /* LaunchScreen.storyboard */; };
+		BD5CC022286E0B1B00FE7575 /* dearMartinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5CC021286E0B1B00FE7575 /* dearMartinViewController.swift */; };
 		BD70A2F6286CF87C00538884 /* ChildrensElementaryBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70A2F5286CF87C00538884 /* ChildrensElementaryBooksViewController.swift */; };
 		BD70A2F8286CFAB300538884 /* TeensBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70A2F7286CFAB300538884 /* TeensBooksViewController.swift */; };
 		BD70A2FA286CFAE800538884 /* YoungAdultsBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70A2F9286CFAE800538884 /* YoungAdultsBooksViewController.swift */; };
@@ -30,6 +31,7 @@
 		BD5CC016286B8FBD00FE7575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD5CC019286B8FBD00FE7575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD5CC01B286B8FBD00FE7575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD5CC021286E0B1B00FE7575 /* dearMartinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dearMartinViewController.swift; sourceTree = "<group>"; };
 		BD70A2F5286CF87C00538884 /* ChildrensElementaryBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrensElementaryBooksViewController.swift; sourceTree = "<group>"; };
 		BD70A2F7286CFAB300538884 /* TeensBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeensBooksViewController.swift; sourceTree = "<group>"; };
 		BD70A2F9286CFAE800538884 /* YoungAdultsBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungAdultsBooksViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		BD5CBFFE286B8FBC00FE7575 = {
 			isa = PBXGroup;
 			children = (
+				BD5CC021286E0B1B00FE7575 /* dearMartinViewController.swift */,
 				BD5CC009286B8FBC00FE7575 /* empowerHour */,
 				BD5CC008286B8FBC00FE7575 /* Products */,
 			);
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5CC022286E0B1B00FE7575 /* dearMartinViewController.swift in Sources */,
 				BD5CC00F286B8FBC00FE7575 /* ViewController.swift in Sources */,
 				BD5CC015286B8FBC00FE7575 /* empowerHour.xcdatamodeld in Sources */,
 				BD70A2F6286CF87C00538884 /* ChildrensElementaryBooksViewController.swift in Sources */,
