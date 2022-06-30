@@ -627,7 +627,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fX2-W1-qYJ">
-                                <rect key="frame" x="133" y="377" width="140" height="40"/>
+                                <rect key="frame" x="225" y="374" width="140" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="yesSheCan">
@@ -638,7 +638,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jv-VJ-KLc">
-                                <rect key="frame" x="138" y="599" width="139" height="40"/>
+                                <rect key="frame" x="65" y="585" width="139" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="makingWay">
@@ -669,7 +669,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTv-a5-QnR">
-                                <rect key="frame" x="128" y="182" width="152" height="40"/>
+                                <rect key="frame" x="38" y="166" width="152" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -689,16 +689,24 @@
                                     <segue destination="mD7-Gi-p6p" kind="show" id="Ogr-Qh-3Oa"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makingOurWayHome" translatesAutoresizingMaskIntoConstraints="NO" id="LnV-H9-5YT">
-                                <rect key="frame" x="133" y="561" width="155" height="210"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ieo-G6-0f0">
+                                <rect key="frame" x="76" y="81" width="202" height="310"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-NC-n24">
-                                <rect key="frame" x="55" y="343" width="288" height="210"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="7V6-1C-brP">
+                                <rect key="frame" x="20" y="81" width="214" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="Ci2-aQ-Akp">
-                                <rect key="frame" x="71" y="124" width="279" height="211"/>
+                                <rect key="frame" x="-5" y="122" width="239" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makingOurWayHome" translatesAutoresizingMaskIntoConstraints="NO" id="LnV-H9-5YT">
+                                <rect key="frame" x="57" y="543" width="155" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-NC-n24">
+                                <rect key="frame" x="151" y="289" width="288" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -709,7 +717,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lvA-is-hIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045" y="439"/>
+            <point key="canvasLocation" x="1044.9275362318842" y="438.61607142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q37-xc-Ct4">
@@ -1032,13 +1040,15 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="orq-aG-BE8"/>
-        <segue reference="7wN-FG-Y47"/>
+        <segue reference="F93-Jn-x9O"/>
         <segue reference="Di2-bf-hLx"/>
         <segue reference="aac-qP-Fgo"/>
         <segue reference="Tsd-7h-OM0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
+        <image name="2" width="1080" height="1080"/>
+        <image name="2-1" width="465" height="728"/>
         <image name="51Hmnrl5riL._SX333_BO1,204,203,200_" width="335" height="499"/>
         <image name="81mRAPG-ddL" width="1650" height="2475"/>
         <image name="bookCovers" width="465" height="728"/>
