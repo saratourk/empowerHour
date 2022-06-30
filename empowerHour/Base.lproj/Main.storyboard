@@ -40,6 +40,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="don't forget to commit!!!" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSB-8a-xCO">
+                                <rect key="frame" x="20" y="136" width="308" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DvW-ov-PYA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -273,12 +279,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fX2-W1-qYJ">
-                                <rect key="frame" x="174" y="412" width="97" height="40"/>
+                                <rect key="frame" x="133" y="412" width="140" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="yesSheCan">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="sGK-j1-eUI" kind="show" id="PsF-uO-Xhh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jv-VJ-KLc">
                                 <rect key="frame" x="177" y="650" width="91" height="40"/>
@@ -311,7 +320,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTv-a5-QnR">
-                                <rect key="frame" x="155" y="191" width="97" height="21"/>
+                                <rect key="frame" x="128" y="182" width="152" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -319,9 +328,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Button">
+                                        <fragment content=" dearMartin">
                                             <attributes>
                                                 <font key="NSFont" size="22" name="AmericanTypewriter"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -331,7 +341,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="Ci2-aQ-Akp">
-                                <rect key="frame" x="67" y="119" width="280" height="187"/>
+                                <rect key="frame" x="64" y="109" width="279" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-NC-n24">
+                                <rect key="frame" x="63" y="343" width="288" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -359,6 +373,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKl-eG-Qdp">
+                                <rect key="frame" x="249" y="717" width="104" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="goBackToYA"/>
+                                <connections>
+                                    <segue destination="UlT-Sg-g2o" kind="show" id="mZl-eO-m14"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-cw-HMN">
+                                <rect key="frame" x="0.0" y="217" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LL8-8o-AkM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -368,6 +395,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIC-uN-YbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1131.8840579710145" y="1091.5178571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="br9-aL-iFf">
+            <objects>
+                <viewController id="sGK-j1-eUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oR8-4D-Erg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yesSheCan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-Hc-R34">
+                                <rect key="frame" x="177" y="60" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-3F-oZh">
+                                <rect key="frame" x="289" y="761" width="104" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="goBackToYA"/>
+                                <connections>
+                                    <segue destination="UlT-Sg-g2o" kind="show" id="1E9-sa-Ox7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="ccv-Vs-Gns">
+                                <rect key="frame" x="23" y="182" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7fs-w2-mTb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QoN-uL-J4h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0q-jZ-5Ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.8840579710147" y="1091.5178571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8xJ-VE-rtN">
@@ -443,13 +508,14 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="orq-aG-BE8"/>
-        <segue reference="F93-Jn-x9O"/>
+        <segue reference="mZl-eO-m14"/>
         <segue reference="kZb-34-UHE"/>
         <segue reference="Tsd-7h-OM0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bookCovers" width="465" height="728"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="yesSheCan" width="297" height="450"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
