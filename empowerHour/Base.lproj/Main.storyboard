@@ -409,10 +409,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="orq-aG-BE8"/>
-        <segue reference="F93-Jn-x9O"/>
-        <segue reference="kZb-34-UHE"/>
-        <segue reference="oJa-J4-vhM"/>
+        <segue reference="1J7-c4-wzj"/>
+        <segue reference="NYb-Ti-RDh"/>
+        <segue reference="yQq-nG-uuv"/>
+        <segue reference="b8O-Le-Ccb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="homekit" catalog="system" width="128" height="106"/>
