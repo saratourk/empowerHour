@@ -10,6 +10,51 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="xyg-eA-9ej">
+            <objects>
+                <viewController id="pug-TT-Fph" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gMU-ch-zhW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-01 at 11.52.15 AM" translatesAutoresizingMaskIntoConstraints="NO" id="s0j-dl-zk7">
+                                <rect key="frame" x="70" y="167" width="275" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-01 at 11.52.31 AM" translatesAutoresizingMaskIntoConstraints="NO" id="yeJ-xx-alE">
+                                <rect key="frame" x="53" y="463" width="309" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About the Developers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-PN-ZLR">
+                                <rect key="frame" x="53" y="86" width="309" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmc-GJ-CuU">
+                                <rect key="frame" x="20" y="803" width="121" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="M0n-xk-qOw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="k20-ZE-Yd2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VbB-hc-JWm"/>
+                        <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nh8-ue-8Nj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgf-dT-XNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-371.01449275362324" y="-306.02678571428572"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="sIT-sl-z0X">
             <objects>
                 <viewController id="M0n-xk-qOw" sceneMemberID="viewController">
@@ -41,7 +86,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empower Hour!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGG-b9-F3i">
-                                <rect key="frame" x="74" y="407" width="306" height="47"/>
+                                <rect key="frame" x="58" y="406" width="306" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
@@ -55,6 +100,17 @@
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwe-rI-iaE">
+                                <rect key="frame" x="58" y="759" width="79" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system" title="" buttonSize="large">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="pug-TT-Fph" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="vVv-q2-P9s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DvW-ov-PYA"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -73,12 +129,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Rz6-CU-qiU">
-                                <rect key="frame" x="40" y="87.5" width="55" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemOrangeColor"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="books.vertical.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ByQ-Zd-mha">
                                 <rect key="frame" x="40" y="233.5" width="334" height="394"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -819,7 +869,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nrM-zv-2Jh">
                                 <rect key="frame" x="26" y="410" width="359" height="303"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Jessica Herthel
 2014
 4.7/5
@@ -875,7 +925,7 @@ This is an essential tool for parents and teachers to share with children whethe
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-8M-wbC">
                                 <rect key="frame" x="10" y="392" width="395" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Kelly Yang
 4.9/5
 2018
@@ -934,10 +984,14 @@ Front Desk explores the themes of immigrant exploitation, the exclusion caused b
                                     <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="mZl-eO-m14"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-JH-rY8">
-                                <rect key="frame" x="36" y="430" width="342" height="235"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-cw-HMN">
+                                <rect key="frame" x="55" y="119" width="323" height="281"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-JH-rY8">
+                                <rect key="frame" x="36" y="459" width="342" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Nic Stone
 4.37/5
 2017
@@ -949,10 +1003,6 @@ Raw, captivating, and undeniably real, Nic Stone joins industry giants Jason Rey
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-cw-HMN">
-                                <rect key="frame" x="55" y="119" width="323" height="281"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LL8-8o-AkM"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -985,7 +1035,7 @@ Raw, captivating, and undeniably real, Nic Stone joins industry giants Jason Rey
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-vg-RU4">
                                 <rect key="frame" x="1" y="425" width="413" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Jenny Lombard 
 4.7/5
 2006
@@ -1054,7 +1104,7 @@ Drita, My Homegirl touchingly explores the effects of war on a family and how fr
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-Gr-Whd">
                                 <rect key="frame" x="0.0" y="272" width="414" height="494"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Aisha Saeed
 4.6/5
 2022
@@ -1102,7 +1152,7 @@ Omar Rising portrays the power dynamics and income inequality present while also
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-Qx-pPh">
                                 <rect key="frame" x="29" y="450" width="356" height="317"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Compilation: Molly Dillon /// Contributors: Jenna Brayton, Eleanor Celeste, Nita Contreras, Kalisha Dessources, Andrea Flores, Vivian Graubard, Noemie Levy, Taylor Lustig, Jaimie Woo
 4.23/5
 2019
@@ -1157,7 +1207,7 @@ This book helps break the stereotype and thinking of women not being able to be 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FT9-Hk-2YM">
                                 <rect key="frame" x="34" y="491" width="360" height="253"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Lois Sepahban
 4.8/5
 2016
@@ -1216,7 +1266,7 @@ Paper Wishes demonstrates how love and hope can still prevail during dark times.
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RyV-7P-lVc">
                                 <rect key="frame" x="30" y="443" width="355" height="294"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Guadalupe García McCall
 4.7/5
 2011
@@ -1278,7 +1328,7 @@ Under the Mesquite is an empowering story about the testing of family bonds, the
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ejx-BE-fF9">
                                 <rect key="frame" x="34" y="426" width="347" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Blair Imani, Patrisse Khan-Cullors (Foreword), Rachelle Baker (Illustrator)
 4.29/5
 2020
@@ -1326,7 +1376,7 @@ Making Our Way Home explores issues like voting rights, domestic terrorism, disc
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2sm-Xs-Uof">
                                 <rect key="frame" x="20" y="425" width="374" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Bettina L. Love
 4.57/5
 2019
@@ -1381,7 +1431,7 @@ Bettina Love persuasively argues that educators must teach students about racial
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-Oe-y0I">
                                 <rect key="frame" x="20" y="436" width="374" height="300.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Joe Feldman
 4.32/5
 2018
@@ -1436,7 +1486,7 @@ Joe Feldman shows us how we can use grading to help students become the leaders 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DV8-I9-Cuh">
                                 <rect key="frame" x="29" y="422" width="357" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Elizabeth G. Cohen
 3.96/5
 1994
@@ -1559,11 +1609,12 @@ This edition features new material on such topics as skill-building for more adv
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="orq-aG-BE8"/>
-        <segue reference="F93-Jn-x9O"/>
-        <segue reference="kZb-34-UHE"/>
-        <segue reference="zsy-Na-rw3"/>
-        <segue reference="u5V-QY-l8s"/>
+        <segue reference="Icd-cg-S42"/>
+        <segue reference="uP7-QV-EWt"/>
+        <segue reference="Xch-Ra-tGe"/>
+        <segue reference="2tw-Tw-ib1"/>
+        <segue reference="b8O-Le-Ccb"/>
+        <segue reference="WgJ-Lu-NQH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
@@ -1573,6 +1624,8 @@ This edition features new material on such topics as skill-building for more adv
         <image name="81mRAPG-ddL" width="1650" height="2475"/>
         <image name="91Cy8dnm7rL" width="1686" height="2547"/>
         <image name="A1H1juun+BL" width="2560" height="2202"/>
+        <image name="Screen Shot 2022-07-01 at 11.52.15 AM" width="662" height="708"/>
+        <image name="Screen Shot 2022-07-01 at 11.52.31 AM" width="724" height="706"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="book.closed.fill" catalog="system" width="115" height="128"/>
@@ -1584,6 +1637,7 @@ This edition features new material on such topics as skill-building for more adv
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="large" width="331" height="500"/>
         <image name="makingOurWayHome" width="352" height="450"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="text.book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="yesSheCan" width="297" height="450"/>
         <systemColor name="labelColor">
