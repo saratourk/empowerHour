@@ -778,10 +778,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A1H1juun+BL" translatesAutoresizingMaskIntoConstraints="NO" id="edn-Ao-AGK">
-                                <rect key="frame" x="20" y="184" width="374" height="251"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IAmJazz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoo-aE-niz">
                                 <rect key="frame" x="160" y="44" width="95" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -800,6 +796,25 @@
                                     <segue destination="FnM-02-RMt" kind="show" id="exn-EV-7Ox"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A1H1juun+BL" translatesAutoresizingMaskIntoConstraints="NO" id="edn-Ao-AGK">
+                                <rect key="frame" x="20" y="135" width="374" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nrM-zv-2Jh">
+                                <rect key="frame" x="26" y="410" width="359" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Jessica Herthel
+2014
+4.7/5
+
+From the time she was two years old, Jazz knew that she had a girl's brain in a boy's body. She loved pink and dressing up as a mermaid and didn't feel like herself in boys' clothing. This confused her family, until they took her to a doctor who said that Jazz was transgender and that she was born that way. Jazz's story is based on her real-life experience and she tells it in a simple, clear way that will be appreciated by picture book readers, their parents, and teachers.
+This is an essential tool for parents and teachers to share with children whether those kids identify as trans or not, as well as sharing the gender spectrum and the normalcy of transgender kidsand adults.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6bu-eA-Bud"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -819,7 +834,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GUEST_48cfe092-c214-4a47-946d-4ee063ef8632" translatesAutoresizingMaskIntoConstraints="NO" id="VOj-HD-aM3">
-                                <rect key="frame" x="34" y="186" width="347" height="277"/>
+                                <rect key="frame" x="34" y="107" width="347" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FrontDesk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-jI-GLI">
@@ -830,16 +845,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-yG-5FE">
-                                <rect key="frame" x="273" y="764" width="121" height="44"/>
+                                <rect key="frame" x="202" y="760" width="192" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToTeens">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="nSG-CQ-eNg" kind="showDetail" id="4cW-l6-Gjw"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-8M-wbC">
+                                <rect key="frame" x="10" y="392" width="395" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Kelly Yang
+4.9/5
+2018
+
+Mia Tang has a lot of secrets.Number 1: She lives in a motel, not a big house. Every day, while her immigrant parents clean the rooms, ten-year-old Mia manages the front desk of the Calivista Motel and tends to its guests.Number 2: Her parents hide immigrants. And if the mean motel owner, Mr. Yao, finds out they've been letting them stay in the empty rooms for free, the Tangs will be doomed.Number 3: She wants to be a writer. But how can she when her mom thinks she should stick to math because English is not her first language?It will take all of Mia's courage, kindness, and hard work to get through this year. Will she be able to hold on to her job, help the immigrants and guests, escape Mr. Yao, and go for her dreams?      
+Front Desk explores the themes of immigrant exploitation, the exclusion caused by racial intolerance and financial hardship, and the way in which persistence can overcome resistance in realizing one's dreams.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tCL-P7-y8l"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -865,10 +895,6 @@
                                 <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-cw-HMN">
-                                <rect key="frame" x="47" y="124" width="323" height="281"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKl-eG-Qdp">
                                 <rect key="frame" x="233" y="760" width="161" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -880,6 +906,25 @@
                                     <segue destination="UlT-Sg-g2o" kind="show" id="mZl-eO-m14"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-JH-rY8">
+                                <rect key="frame" x="36" y="430" width="342" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Nic Stone
+4.37/5
+2017
+
+Raw, captivating, and undeniably real, Nic Stone joins industry giants Jason Reynolds and Walter Dean Myers as she boldly tackles American race relations in this stunning debut.
+“Dear Martin” talks about very important and very relevant issues such as racism and the police brutality that comes with that, and also judgment and ridicule that many people of color like the main character here Justyce received.
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-cw-HMN">
+                                <rect key="frame" x="46" y="119" width="323" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LL8-8o-AkM"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -899,7 +944,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81Zc8yH7Z1L" translatesAutoresizingMaskIntoConstraints="NO" id="L9G-Y6-aQr">
-                                <rect key="frame" x="20" y="153" width="363" height="353"/>
+                                <rect key="frame" x="54" y="104" width="306" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsI-if-pLz">
@@ -920,6 +965,24 @@
                                     <segue destination="FnM-02-RMt" kind="show" id="dta-J5-FXD"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-vg-RU4">
+                                <rect key="frame" x="1" y="425" width="413" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Jenny Lombard 
+4.7/5
+2006
+
+Drita and her family come to New York as refugees from war-torn Kosovo. Even though she barely speaks English, Drita can’t wait to start school and make a new best friend. But her new classmates don’t make it easy, teasing her about virtually everything. The worst is Maxie, a tough African-American girl whose sassy attitude hides a painful secret.
+
+When Maxie takes things too far, their teacher assigns Maxie a paper on Drita and her journey to America from Kosovo. Suddenly, Maxie realizes she and Drita have more in common than she thought. And when Drita’s mother gets sick, there’s only one person who can help—Drita’s new homegirl.
+
+Drita, My Homegirl touchingly explores the effects of war on a family and how friendship sometimes appears in the unlikeliest places.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Erk-uM-Qbf"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -939,7 +1002,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="91Cy8dnm7rL" translatesAutoresizingMaskIntoConstraints="NO" id="UpE-LR-LDM">
-                                <rect key="frame" x="20" y="166" width="374" height="321"/>
+                                <rect key="frame" x="20" y="72" width="374" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OmarRising" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aL-93-Y5d">
@@ -960,6 +1023,21 @@
                                     <segue destination="nSG-CQ-eNg" kind="show" id="gut-6K-O6f"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-Gr-Whd">
+                                <rect key="frame" x="0.0" y="272" width="414" height="494"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Aisha Saeed
+4.6/5
+2022
+
+Omar knows his scholarship to Ghalib Academy Boarding School is a game changer, providing him—the son of a servant—with an opportunity to improve his station in life. He can’t wait to experience all the school has to offer, especially science club and hopefully the soccer team; but when he arrives, his hopes are dashed. First-year scholarship students aren’t allowed to join clubs or teams—and not only that, they have to earn their keep doing menial chores. At first Omar is dejected—but then he gets angry when he learns something even worse—the school deliberately “weeds out” kids like him by requiring them to get significantly higher grades than kids who can pay tuition, making it nearly impossible for scholarship students to graduate. It’s a good thing that in his favorite class, he’s learned the importance of being stubbornly optimistic. So with the help of his tight knit new group of friends—and with the threat of expulsion looming over him—he sets out to do what seems impossible: change a rigged system.
+Omar Rising portrays the power dynamics and income inequality present while also highlighting the strong bonds Omar creates with his fellow scholarship winners. The cooperation and organization the boys demonstrate while figuring out how to advocate for themselves also serve as inspiring models for readers. This novel is a powerful tale about a preteen pushing back against systemic injustice
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9v5-4U-MnO"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1000,6 +1078,21 @@
                                     <segue destination="UlT-Sg-g2o" kind="show" id="1E9-sa-Ox7"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-Qx-pPh">
+                                <rect key="frame" x="29" y="450" width="356" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Compilation: Molly Dillon /// Contributors: Jenna Brayton, Eleanor Celeste, Nita Contreras, Kalisha Dessources, Andrea Flores, Vivian Graubard, Noemie Levy, Taylor Lustig, Jaimie Woo
+4.23/5
+2019
+
+Return to President Obama’s White House in this anthology for young women by young women, featuring stories from ten inspiring junior staffers who joined his administration right out of college with the hope of making a difference.
+This book helps break the stereotype and thinking of women not being able to be interested in and participating in politics by providing real life stories of young women joining Obama’s White House right out of college.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7fs-w2-mTb"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1019,7 +1112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="41aGbeoGlqL._SX341_BO1,204,203,200_" translatesAutoresizingMaskIntoConstraints="NO" id="94g-NE-RSk">
-                                <rect key="frame" x="20" y="152" width="374" height="316"/>
+                                <rect key="frame" x="20" y="142" width="374" height="316"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PaperWishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5X-i7-vcw">
@@ -1040,6 +1133,21 @@
                                     <segue destination="FnM-02-RMt" kind="show" id="q7b-HR-ejs"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FT9-Hk-2YM">
+                                <rect key="frame" x="34" y="491" width="360" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lois Sepahban
+4.8/5
+2016
+
+It's 1942, after the attack on Pearl Harbor, and Manami and her family are Japanese American, which means that the government says they must leave their home by the sea and join other Japanese Americans at a prison camp in the desert. It isn't until she finds a way to let go of her guilt that Manami can reclaim the piece of herself that she left behind and accept all that has happened to her family.
+Paper Wishes demonstrates how love and hope can still prevail during dark times.
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JGN-z7-rFy"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1059,11 +1167,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="large" translatesAutoresizingMaskIntoConstraints="NO" id="hen-Cm-r29">
-                                <rect key="frame" x="0.0" y="172" width="394" height="282"/>
+                                <rect key="frame" x="0.0" y="126" width="394" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="large" translatesAutoresizingMaskIntoConstraints="NO" id="nT6-6y-cF3">
-                                <rect key="frame" x="10" y="182" width="394" height="282"/>
+                                <rect key="frame" x="10" y="136" width="394" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UnderTheMesquite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNU-QF-kTJ">
@@ -1084,6 +1192,21 @@
                                     <segue destination="nSG-CQ-eNg" kind="show" id="ln1-r5-u7X"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RyV-7P-lVc">
+                                <rect key="frame" x="30" y="443" width="355" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Guadalupe García McCall
+4.7/5
+2011
+
+a teenage girl named Lupita whose mom is stricken with cancer. As Lupita faces the possibility of losing her mom, she holds things together at school by being true to herself amid the opposition of friends and at home by taking care of her siblings. She takes solace in acting in drama class and writing in her notebook under a mesquite tree. Lupita is a strong young woman; pain and grief won't conquer her.
+Under the Mesquite is an empowering story about the testing of family bonds, the strength of a young woman navigating pain and hardship with surprising resilience, and the kind of love that cannot be uprooted.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MS3-Oc-I8N"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1124,6 +1247,21 @@
                                     <segue destination="UlT-Sg-g2o" kind="show" id="d4b-qM-5gP"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ejx-BE-fF9">
+                                <rect key="frame" x="34" y="402" width="347" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Blair Imani, Patrisse Khan-Cullors (Foreword), Rachelle Baker (Illustrator)
+4.29/5
+2020
+
+A powerful illustrated history of the Great Migration and its sweeping impact on Black and American culture, from Reconstruction to the rise of hip hop.
+Making Our Way Home explores issues like voting rights, domestic terrorism, discrimination, and segregation alongside the flourishing of arts and culture, activism, and civil rights. Imani shows how these influences shaped America's workforce and wealth distribution by featuring the stories of notable people and events, relevant data, and family histories.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3kn-jp-aRB"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1164,6 +1302,21 @@
                                     <segue destination="Ffd-14-LoY" kind="show" id="o3r-EH-Rhk"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2sm-Xs-Uof">
+                                <rect key="frame" x="20" y="425" width="374" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Bettina L. Love
+4.57/5
+2019
+
+Drawing on personal stories, research, and historical events, an esteemed educator offers a vision of educational justice inspired by the rebellious spirit and methods of abolitionists.
+Bettina Love persuasively argues that educators must teach students about racial violence, oppression, and how to make sustainable change in their communities through radical civic initiatives and movements. “We Want to Do More Than Survive” introduces an alternative to traditional modes of educational reform and expands our ideas of civic engagement and intersectional justice.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S1C-dI-aB9"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1204,6 +1357,21 @@
                                     <segue destination="Ffd-14-LoY" kind="show" id="iee-ya-zNq"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-Oe-y0I">
+                                <rect key="frame" x="20" y="436" width="374" height="300.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Joe Feldman
+4.32/5
+2018
+
+Here at last--and none too soon--is a resource that delivers the research base, tools, and courage to tackle one of the most challenging and emotionally charged conversations in today's schools: our inconsistent grading practices and the ways they can inadvertently perpetuate the achievement and opportunity gaps among our students.
+Joe Feldman shows us how we can use grading to help students become the leaders of their own learning and lift the veil on how to succeed. . . . This must-have book will help teachers learn to implement improved, equity-focused grading for impact.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OTv-Ka-y9t"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1244,6 +1412,21 @@
                                     <segue destination="Ffd-14-LoY" kind="show" id="Xop-Up-jBm"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DV8-I9-Cuh">
+                                <rect key="frame" x="29" y="422" width="357" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Elizabeth G. Cohen
+3.96/5
+1994
+
+This edition features new material on such topics as skill-building for more advanced students and how to use multiple-ability treatments. The book aims to combine easy-to-follow theory with examples and teaching strategies that are adaptable to any situation.
+“Designing Groupwork: Strategies for the Heterogeneous Classroom” clearly defines the groupwork dilemma and actions educators can take to address it, such as ensuring tasks are groupworthy and proactively disrupting status problems.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KQt-Ls-LmY"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1348,8 +1531,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="o3r-EH-Rhk"/>
         <segue reference="mZl-eO-m14"/>
-        <segue reference="4cW-l6-Gjw"/>
-        <segue reference="exn-EV-7Ox"/>
+        <segue reference="gut-6K-O6f"/>
+        <segue reference="q7b-HR-ejs"/>
         <segue reference="kjE-aR-IfZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemOrangeColor"/>
@@ -1370,6 +1553,12 @@
         <image name="large" width="331" height="500"/>
         <image name="makingOurWayHome" width="352" height="450"/>
         <image name="yesSheCan" width="297" height="450"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
