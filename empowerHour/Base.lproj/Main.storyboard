@@ -901,7 +901,7 @@ This is an essential tool for parents and teachers to share with children whethe
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbo-gm-gME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265.21739130434787" y="1277.6785714285713"/>
+            <point key="canvasLocation" x="-404" y="1223"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0kI-s3-i73">
@@ -956,7 +956,7 @@ Front Desk explores the themes of immigrant exploitation, the exclusion caused b
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDo-Sm-rNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="1254"/>
+            <point key="canvasLocation" x="438" y="1223"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q37-xc-Ct4">
@@ -1403,7 +1403,7 @@ Bettina Love persuasively argues that educators must teach students about racial
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUr-U3-7e1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936" y="1325"/>
+            <point key="canvasLocation" x="1912" y="1223"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OEk-nd-YrS">
@@ -1609,10 +1609,10 @@ This edition features new material on such topics as skill-building for more adv
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Icd-cg-S42"/>
+        <segue reference="o3r-EH-Rhk"/>
         <segue reference="uP7-QV-EWt"/>
-        <segue reference="Xch-Ra-tGe"/>
-        <segue reference="2tw-Tw-ib1"/>
+        <segue reference="4cW-l6-Gjw"/>
+        <segue reference="exn-EV-7Ox"/>
         <segue reference="b8O-Le-Ccb"/>
         <segue reference="WgJ-Lu-NQH"/>
     </inferredMetricsTieBreakers>
