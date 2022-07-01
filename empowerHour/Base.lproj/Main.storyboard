@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,32 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to empowerHour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySh-1F-pIK">
-                                <rect key="frame" x="58" y="387" width="299" height="122"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySh-1F-pIK">
+                                <rect key="frame" x="103" y="306" width="242" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmG-st-1h4">
-                                <rect key="frame" x="319" y="822" width="75" height="40"/>
+                                <rect key="frame" x="261" y="736" width="119" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.right" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="b8O-Le-Ccb"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="b8O-Le-Ccb"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SUMMARYYY!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-Ik-5d7">
-                                <rect key="frame" x="143" y="537" width="129" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="book.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k8J-Bx-osY">
+                                <rect key="frame" x="150" y="147" width="122" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empower Hour!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGG-b9-F3i">
+                                <rect key="frame" x="74" y="407" width="306" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="find empowering books in an accessible way" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aC1-Dg-5Jy">
+                                <rect key="frame" x="87" y="529" width="240" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DvW-ov-PYA"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -60,10 +73,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Rz6-CU-qiU">
-                                <rect key="frame" x="20" y="57" width="82" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="books.vertical.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ByQ-Zd-mha">
                                 <rect key="frame" x="40" y="233.5" width="334" height="394"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,7 +87,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="6dd-m4-yff"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="6dd-m4-yff"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE5-Ob-QuB">
@@ -90,7 +99,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="zsy-Na-rw3"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="zsy-Na-rw3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9A1-0G-tLC">
@@ -102,7 +111,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="Wxd-Z6-NDF"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Wxd-Z6-NDF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-Fn-LMI">
@@ -114,7 +123,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="PsQ-ci-tdP"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="PsQ-ci-tdP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dor-K3-yne">
@@ -126,7 +135,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="pkE-Nq-nSJ"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="pkE-Nq-nSJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cS-an-71y">
@@ -138,7 +147,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="aac-qP-Fgo"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="aac-qP-Fgo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cf-iQ-mgP">
@@ -150,7 +159,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="rNf-Hy-6sK"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="rNf-Hy-6sK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyu-XG-nco">
@@ -162,7 +171,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="NF3-9s-UId"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="NF3-9s-UId"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es0-ur-Vn6">
@@ -174,7 +183,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="2tw-Tw-ib1"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="2tw-Tw-ib1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-gD-Rf4">
@@ -186,7 +195,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="6nH-jQ-dZ7"/>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="6nH-jQ-dZ7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvM-wS-odq">
@@ -198,7 +207,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="Xch-Ra-tGe"/>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Xch-Ra-tGe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZz-hY-rZK">
@@ -210,7 +219,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="Di2-bf-hLx"/>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Di2-bf-hLx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkF-Zg-nqd">
@@ -222,7 +231,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="dIJ-rm-UEU"/>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="dIJ-rm-UEU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTO-9O-Dbo">
@@ -234,7 +243,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="WAA-Qb-fgZ"/>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="WAA-Qb-fgZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlw-Kq-EOX">
@@ -246,7 +255,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="fis-Hs-dnS"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="fis-Hs-dnS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zay-8x-Qci">
@@ -258,7 +267,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="1AL-NC-Tps"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="1AL-NC-Tps"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zq-UT-kBq">
@@ -270,7 +279,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="qin-84-RWt"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="qin-84-RWt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okH-px-I9V">
@@ -282,7 +291,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="EI6-ES-PYO"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="EI6-ES-PYO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEm-Nq-0IA">
@@ -294,7 +303,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="L0k-ca-zvl"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="L0k-ca-zvl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX2-KQ-2lv">
@@ -306,7 +315,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="59s-Cf-Bnz"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="59s-Cf-Bnz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78W-g6-hz8">
@@ -318,7 +327,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="Icd-cg-S42"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Icd-cg-S42"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOw-c1-7qg">
@@ -330,7 +339,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="DwN-W0-E1H"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="DwN-W0-E1H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANO-R5-cpD">
@@ -342,7 +351,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="Vmk-dE-opg"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Vmk-dE-opg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jx-uP-Uc2">
@@ -354,7 +363,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="qDe-pE-gDR"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="qDe-pE-gDR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubp-4b-cbl">
@@ -366,7 +375,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="ETV-dU-pa6"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="ETV-dU-pa6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-4M-LpV">
@@ -378,7 +387,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="Zia-CC-HpY"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Zia-CC-HpY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HH-s9-bSX">
@@ -390,7 +399,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="uP7-QV-EWt"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="uP7-QV-EWt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-oA-cIa">
@@ -402,7 +411,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="7wN-FG-Y47"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="7wN-FG-Y47"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIN-kA-9a9">
@@ -414,7 +423,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="2gy-65-Y8r"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="2gy-65-Y8r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5y-rL-Mvh">
@@ -426,7 +435,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="xTV-KB-M0M"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="xTV-KB-M0M"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUO-TJ-X2R">
@@ -437,7 +446,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="sWc-lP-Q1o"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="sWc-lP-Q1o"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFA-V4-NzL">
@@ -449,7 +458,7 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="XIn-Ga-6ie"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="XIn-Ga-6ie"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYC-rk-KPN">
@@ -461,16 +470,23 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="GN4-YE-L7w"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="GN4-YE-L7w"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNC-gk-ggg">
-                                <rect key="frame" x="166" y="118" width="82" height="58"/>
+                                <rect key="frame" x="166" y="118" width="103" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Rz6-CU-qiU">
+                                <rect key="frame" x="40" y="87.5" width="55" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -487,25 +503,18 @@
             <objects>
                 <viewController id="FnM-02-RMt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1hz-gd-Hwb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZd-dd-eY4">
-                                <rect key="frame" x="161" y="44" width="92" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stL-jN-6ye">
-                                <rect key="frame" x="161" y="428" width="91" height="40"/>
+                                <rect key="frame" x="161" y="364" width="91" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="tvj-q6-h4I" kind="show" id="ghy-yl-SLX"/>
+                                    <segue destination="tvj-q6-h4I" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="ghy-yl-SLX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clq-PG-78l">
@@ -516,52 +525,61 @@
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="4gc-Yb-Gud" kind="show" id="QDi-JN-PUp"/>
+                                    <segue destination="4gc-Yb-Gud" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="QDi-JN-PUp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d10-ku-1lJ">
-                                <rect key="frame" x="20" y="779" width="121" height="31"/>
+                                <rect key="frame" x="0.0" y="779" width="90" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="kjE-aR-IfZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="kjE-aR-IfZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-nB-VpQ">
-                                <rect key="frame" x="161" y="244" width="97" height="40"/>
+                                <rect key="frame" x="162" y="125" width="97" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="yNG-Mh-YJT" kind="show" id="CAg-5d-khc"/>
+                                    <segue destination="yNG-Mh-YJT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="CAg-5d-khc"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A1H1juun+BL" translatesAutoresizingMaskIntoConstraints="NO" id="FlN-CM-fPI">
-                                <rect key="frame" x="20" y="139" width="280" height="182"/>
+                                <rect key="frame" x="73" y="110" width="272" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="41aGbeoGlqL._SX341_BO1,204,203,200_" translatesAutoresizingMaskIntoConstraints="NO" id="WOb-D4-EjY">
-                                <rect key="frame" x="66" y="591" width="234" height="216"/>
+                                <rect key="frame" x="98" y="579" width="225" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81Zc8yH7Z1L" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-GW-i2Z">
-                                <rect key="frame" x="49" y="314" width="315" height="269"/>
+                                <rect key="frame" x="52" y="308" width="310" height="248"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0u-KF-K4x">
-                                <rect key="frame" x="273" y="744" width="121" height="40"/>
+                                <rect key="frame" x="293" y="779" width="121" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="kZb-34-UHE"/>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="kZb-34-UHE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZd-dd-eY4">
+                                <rect key="frame" x="160" y="44" width="92" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9TW-Yr-8Ke"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -577,81 +595,84 @@
             <objects>
                 <viewController id="nSG-CQ-eNg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Hl-6n-qSc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyT-UR-K5m">
                                 <rect key="frame" x="176" y="44" width="62" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZw-1M-gvc">
-                                <rect key="frame" x="176" y="188" width="97" height="40"/>
+                                <rect key="frame" x="159" y="167" width="97" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="q26-8P-2Y4" kind="show" id="4jB-8X-BtE"/>
+                                    <segue destination="q26-8P-2Y4" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="4jB-8X-BtE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ym-O3-NVJ">
-                                <rect key="frame" x="176" y="428" width="62" height="40"/>
+                                <rect key="frame" x="176" y="395" width="62" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="I9H-iR-uxA" kind="show" id="Ogz-lR-wcu"/>
+                                    <segue destination="I9H-iR-uxA" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Ogz-lR-wcu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj6-23-9Rd">
-                                <rect key="frame" x="176" y="647" width="91" height="40"/>
+                                <rect key="frame" x="176" y="745" width="91" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="HZV-zr-zNi" kind="show" id="AV7-Fc-hMi"/>
+                                    <segue destination="HZV-zr-zNi" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="AV7-Fc-hMi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BN-N3-0Lt">
-                                <rect key="frame" x="20" y="771" width="121" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="AtI-Ay-0uo"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GUEST_48cfe092-c214-4a47-946d-4ee063ef8632" translatesAutoresizingMaskIntoConstraints="NO" id="4EN-Ta-9RQ">
-                                <rect key="frame" x="55" y="75" width="360" height="247"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFR-qG-fzn">
                                 <rect key="frame" x="293" y="762" width="121" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="F93-Jn-x9O"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="F93-Jn-x9O"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="large" translatesAutoresizingMaskIntoConstraints="NO" id="cf5-xi-P9B">
-                                <rect key="frame" x="118" y="555" width="263" height="224"/>
+                                <rect key="frame" x="71" y="610" width="273" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="91Cy8dnm7rL" translatesAutoresizingMaskIntoConstraints="NO" id="u01-Zx-ctM">
-                                <rect key="frame" x="0.0" y="316" width="353" height="244"/>
+                                <rect key="frame" x="28" y="346" width="353" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frontDesk" translatesAutoresizingMaskIntoConstraints="NO" id="17g-4d-yQn">
+                                <rect key="frame" x="71" y="93" width="273" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BN-N3-0Lt">
+                                <rect key="frame" x="0.0" y="771" width="121" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="AtI-Ay-0uo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SUi-hm-EST"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -667,60 +688,62 @@
             <objects>
                 <viewController id="UlT-Sg-g2o" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VHI-iV-pma">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Young Adults" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgo-Se-U9l">
                                 <rect key="frame" x="137" y="44" width="141" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fX2-W1-qYJ">
-                                <rect key="frame" x="225" y="374" width="140" height="40"/>
+                                <rect key="frame" x="143" y="374" width="140" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="yesSheCan">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="sGK-j1-eUI" kind="show" id="PsF-uO-Xhh"/>
+                                    <segue destination="sGK-j1-eUI" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="PsF-uO-Xhh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jv-VJ-KLc">
-                                <rect key="frame" x="65" y="585" width="139" height="40"/>
+                                <rect key="frame" x="143" y="589" width="139" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="makingWay">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="xLs-dn-oWA" kind="show" id="Dg4-CI-Hc5"/>
+                                    <segue destination="xLs-dn-oWA" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Dg4-CI-Hc5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ze-Vm-Blr">
                                 <rect key="frame" x="273" y="767" width="121" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="orq-aG-BE8"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="orq-aG-BE8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxK-Fm-Pgb">
                                 <rect key="frame" x="20" y="771" width="121" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Tsd-7h-OM0"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Tsd-7h-OM0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTv-a5-QnR">
-                                <rect key="frame" x="38" y="166" width="152" height="40"/>
+                                <rect key="frame" x="131" y="117" width="152" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -737,27 +760,19 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="mD7-Gi-p6p" kind="show" id="Ogr-Qh-3Oa"/>
+                                    <segue destination="mD7-Gi-p6p" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Ogr-Qh-3Oa"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ieo-G6-0f0">
-                                <rect key="frame" x="76" y="81" width="202" height="310"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="7V6-1C-brP">
-                                <rect key="frame" x="20" y="81" width="214" height="211"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-NC-n24">
+                                <rect key="frame" x="69" y="310" width="288" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="Ci2-aQ-Akp">
-                                <rect key="frame" x="-5" y="122" width="239" height="211"/>
+                                <rect key="frame" x="88" y="78" width="239" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makingOurWayHome" translatesAutoresizingMaskIntoConstraints="NO" id="LnV-H9-5YT">
-                                <rect key="frame" x="57" y="543" width="155" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-NC-n24">
-                                <rect key="frame" x="151" y="289" width="288" height="210"/>
+                                <rect key="frame" x="137" y="549" width="155" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -775,46 +790,47 @@
             <objects>
                 <viewController id="yNG-Mh-YJT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fTL-B8-A0v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IAmJazz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoo-aE-niz">
-                                <rect key="frame" x="160" y="44" width="95" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;I Am Jazz&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoo-aE-niz">
+                                <rect key="frame" x="147" y="61" width="120" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNr-oy-g4E">
-                                <rect key="frame" x="173" y="768" width="221" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToChildren">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="exn-EV-7Ox"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A1H1juun+BL" translatesAutoresizingMaskIntoConstraints="NO" id="edn-Ao-AGK">
-                                <rect key="frame" x="20" y="135" width="374" height="251"/>
+                                <rect key="frame" x="20" y="115" width="374" height="251"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nrM-zv-2Jh">
                                 <rect key="frame" x="26" y="410" width="359" height="303"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Jessica Herthel
+                                <string key="text">Jessica Herthel
 2014
 4.7/5
 
 From the time she was two years old, Jazz knew that she had a girl's brain in a boy's body. She loved pink and dressing up as a mermaid and didn't feel like herself in boys' clothing. This confused her family, until they took her to a doctor who said that Jazz was transgender and that she was born that way. Jazz's story is based on her real-life experience and she tells it in a simple, clear way that will be appreciated by picture book readers, their parents, and teachers.
 This is an essential tool for parents and teachers to share with children whether those kids identify as trans or not, as well as sharing the gender spectrum and the normalcy of transgender kidsand adults.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNr-oy-g4E">
+                                <rect key="frame" x="262" y="759" width="123" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="text.book.closed.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="exn-EV-7Ox"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6bu-eA-Bud"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -823,53 +839,53 @@ This is an essential tool for parents and teachers to share with children whethe
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbo-gm-gME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-440.57971014492756" y="1066.7410714285713"/>
+            <point key="canvasLocation" x="-265.21739130434787" y="1277.6785714285713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0kI-s3-i73">
             <objects>
                 <viewController id="q26-8P-2Y4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BsH-kY-dyc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GUEST_48cfe092-c214-4a47-946d-4ee063ef8632" translatesAutoresizingMaskIntoConstraints="NO" id="VOj-HD-aM3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frontDesk" translatesAutoresizingMaskIntoConstraints="NO" id="VOj-HD-aM3">
                                 <rect key="frame" x="34" y="107" width="347" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FrontDesk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-jI-GLI">
-                                <rect key="frame" x="151" y="44" width="112" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Front Desk&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-jI-GLI">
+                                <rect key="frame" x="141" y="57" width="132" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-yG-5FE">
-                                <rect key="frame" x="202" y="760" width="192" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToTeens">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="showDetail" id="4cW-l6-Gjw"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-8M-wbC">
                                 <rect key="frame" x="10" y="392" width="395" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Kelly Yang
+                                <string key="text">Kelly Yang
 4.9/5
 2018
 
 Mia Tang has a lot of secrets.Number 1: She lives in a motel, not a big house. Every day, while her immigrant parents clean the rooms, ten-year-old Mia manages the front desk of the Calivista Motel and tends to its guests.Number 2: Her parents hide immigrants. And if the mean motel owner, Mr. Yao, finds out they've been letting them stay in the empty rooms for free, the Tangs will be doomed.Number 3: She wants to be a writer. But how can she when her mom thinks she should stick to math because English is not her first language?It will take all of Mia's courage, kindness, and hard work to get through this year. Will she be able to hold on to her job, help the immigrants and guests, escape Mr. Yao, and go for her dreams?      
 Front Desk explores the themes of immigrant exploitation, the exclusion caused by racial intolerance and financial hardship, and the way in which persistence can overcome resistance in realizing one's dreams.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-yG-5FE">
+                                <rect key="frame" x="222" y="786" width="192" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="4cW-l6-Gjw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tCL-P7-y8l"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -878,32 +894,32 @@ Front Desk explores the themes of immigrant exploitation, the exclusion caused b
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDo-Sm-rNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311.59420289855075" y="1076.7857142857142"/>
+            <point key="canvasLocation" x="497" y="1254"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q37-xc-Ct4">
             <objects>
                 <viewController id="mD7-Gi-p6p" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tno-7j-DI3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DearMartin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-ne-vPR">
-                                <rect key="frame" x="145" y="20" width="125" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Dear Martin&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-ne-vPR">
+                                <rect key="frame" x="135" y="61" width="145" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKl-eG-Qdp">
-                                <rect key="frame" x="233" y="760" width="161" height="40"/>
+                                <rect key="frame" x="282" y="756" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToYA">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="mZl-eO-m14"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="mZl-eO-m14"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-JH-rY8">
@@ -922,7 +938,7 @@ Raw, captivating, and undeniably real, Nic Stone joins industry giants Jason Rey
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-cw-HMN">
-                                <rect key="frame" x="46" y="119" width="323" height="281"/>
+                                <rect key="frame" x="55" y="119" width="323" height="281"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -933,43 +949,32 @@ Raw, captivating, and undeniably real, Nic Stone joins industry giants Jason Rey
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIC-uN-YbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131.8840579710145" y="1077.4553571428571"/>
+            <point key="canvasLocation" x="1149" y="1223"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="O5o-IU-6sy">
             <objects>
                 <viewController id="tvj-q6-h4I" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O3b-vx-Xbf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81Zc8yH7Z1L" translatesAutoresizingMaskIntoConstraints="NO" id="L9G-Y6-aQr">
                                 <rect key="frame" x="54" y="104" width="306" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsI-if-pLz">
-                                <rect key="frame" x="186" y="44" width="55" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Drita My Homegirl&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsI-if-pLz">
+                                <rect key="frame" x="101" y="44" width="213" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuE-px-2Jy">
-                                <rect key="frame" x="173" y="770" width="221" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToChildren">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="dta-J5-FXD"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-vg-RU4">
                                 <rect key="frame" x="1" y="425" width="413" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Jenny Lombard 
+                                <string key="text">Jenny Lombard 
 4.7/5
 2006
 
@@ -978,11 +983,22 @@ Drita and her family come to New York as refugees from war-torn Kosovo. Even tho
 When Maxie takes things too far, their teacher assigns Maxie a paper on Drita and her journey to America from Kosovo. Suddenly, Maxie realizes she and Drita have more in common than she thought. And when Drita’s mother gets sick, there’s only one person who can help—Drita’s new homegirl.
 
 Drita, My Homegirl touchingly explores the effects of war on a family and how friendship sometimes appears in the unlikeliest places.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuE-px-2Jy">
+                                <rect key="frame" x="317" y="798" width="66" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="dta-J5-FXD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Erk-uM-Qbf"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -991,49 +1007,49 @@ Drita, My Homegirl touchingly explores the effects of war on a family and how fr
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r0g-zx-lJ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-442.02898550724643" y="1721.6517857142856"/>
+            <point key="canvasLocation" x="-336" y="1856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pzC-tT-ATZ">
             <objects>
                 <viewController id="I9H-iR-uxA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I6k-P2-mf8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="91Cy8dnm7rL" translatesAutoresizingMaskIntoConstraints="NO" id="UpE-LR-LDM">
                                 <rect key="frame" x="20" y="72" width="374" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OmarRising" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aL-93-Y5d">
-                                <rect key="frame" x="145" y="44" width="125" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Omar Rising&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aL-93-Y5d">
+                                <rect key="frame" x="145" y="44" width="145" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-fp-hg3">
-                                <rect key="frame" x="202" y="763" width="192" height="40"/>
+                                <rect key="frame" x="266" y="759" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToTeens">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="gut-6K-O6f"/>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="gut-6K-O6f"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-Gr-Whd">
                                 <rect key="frame" x="0.0" y="272" width="414" height="494"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Aisha Saeed
+                                <string key="text">Aisha Saeed
 4.6/5
 2022
 
 Omar knows his scholarship to Ghalib Academy Boarding School is a game changer, providing him—the son of a servant—with an opportunity to improve his station in life. He can’t wait to experience all the school has to offer, especially science club and hopefully the soccer team; but when he arrives, his hopes are dashed. First-year scholarship students aren’t allowed to join clubs or teams—and not only that, they have to earn their keep doing menial chores. At first Omar is dejected—but then he gets angry when he learns something even worse—the school deliberately “weeds out” kids like him by requiring them to get significantly higher grades than kids who can pay tuition, making it nearly impossible for scholarship students to graduate. It’s a good thing that in his favorite class, he’s learned the importance of being stubbornly optimistic. So with the help of his tight knit new group of friends—and with the threat of expulsion looming over him—he sets out to do what seems impossible: change a rigged system.
 Omar Rising portrays the power dynamics and income inequality present while also highlighting the strong bonds Omar creates with his fellow scholarship winners. The cooperation and organization the boys demonstrate while figuring out how to advocate for themselves also serve as inspiring models for readers. This novel is a powerful tale about a preteen pushing back against systemic injustice
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1046,53 +1062,53 @@ Omar Rising portrays the power dynamics and income inequality present while also
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HdD-hC-1dk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311.59420289855075" y="1721.6517857142856"/>
+            <point key="canvasLocation" x="438" y="1925"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="br9-aL-iFf">
             <objects>
                 <viewController id="sGK-j1-eUI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oR8-4D-Erg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YesSheCan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-Hc-R34">
-                                <rect key="frame" x="149" y="10" width="116" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="ccv-Vs-Gns">
                                 <rect key="frame" x="64" y="121" width="286" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-3F-oZh">
-                                <rect key="frame" x="233" y="767" width="161" height="40"/>
+                                <rect key="frame" x="282" y="763" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToYA">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="1E9-sa-Ox7"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="1E9-sa-Ox7"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-Qx-pPh">
                                 <rect key="frame" x="29" y="450" width="356" height="317"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Compilation: Molly Dillon /// Contributors: Jenna Brayton, Eleanor Celeste, Nita Contreras, Kalisha Dessources, Andrea Flores, Vivian Graubard, Noemie Levy, Taylor Lustig, Jaimie Woo
+                                <string key="text">Compilation: Molly Dillon /// Contributors: Jenna Brayton, Eleanor Celeste, Nita Contreras, Kalisha Dessources, Andrea Flores, Vivian Graubard, Noemie Levy, Taylor Lustig, Jaimie Woo
 4.23/5
 2019
 
 Return to President Obama’s White House in this anthology for young women by young women, featuring stories from ten inspiring junior staffers who joined his administration right out of college with the hope of making a difference.
 This book helps break the stereotype and thinking of women not being able to be interested in and participating in politics by providing real life stories of young women joining Obama’s White House right out of college.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Yes She Can&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-Hc-R34">
+                                <rect key="frame" x="136" y="57" width="142" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7fs-w2-mTb"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1101,36 +1117,29 @@ This book helps break the stereotype and thinking of women not being able to be 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0q-jZ-5Ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113.0434782608697" y="1721.6517857142856"/>
+            <point key="canvasLocation" x="1284" y="1925"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BDh-sv-hH3">
             <objects>
                 <viewController id="4gc-Yb-Gud" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HR3-SA-Daa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="41aGbeoGlqL._SX341_BO1,204,203,200_" translatesAutoresizingMaskIntoConstraints="NO" id="94g-NE-RSk">
                                 <rect key="frame" x="20" y="142" width="374" height="316"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PaperWishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5X-i7-vcw">
-                                <rect key="frame" x="139" y="44" width="137" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weT-s4-4iF">
-                                <rect key="frame" x="173" y="761" width="221" height="40"/>
+                                <rect key="frame" x="252" y="757" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToChildren">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="FnM-02-RMt" kind="show" id="q7b-HR-ejs"/>
+                                    <segue destination="FnM-02-RMt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="q7b-HR-ejs"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FT9-Hk-2YM">
@@ -1148,6 +1157,13 @@ Paper Wishes demonstrates how love and hope can still prevail during dark times.
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Paper Wishes&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5X-i7-vcw">
+                                <rect key="frame" x="129" y="68" width="157" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JGN-z7-rFy"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1156,14 +1172,14 @@ Paper Wishes demonstrates how love and hope can still prevail during dark times.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FI7-XV-nuf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-442.02898550724643" y="2362.5"/>
+            <point key="canvasLocation" x="-441" y="2626"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d1U-Lz-gi3">
             <objects>
                 <viewController id="HZV-zr-zNi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBz-xg-X2V">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="large" translatesAutoresizingMaskIntoConstraints="NO" id="hen-Cm-r29">
@@ -1174,39 +1190,39 @@ Paper Wishes demonstrates how love and hope can still prevail during dark times.
                                 <rect key="frame" x="10" y="136" width="394" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UnderTheMesquite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNU-QF-kTJ">
-                                <rect key="frame" x="107" y="44" width="201" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-ur-ldc">
-                                <rect key="frame" x="202" y="763" width="192" height="40"/>
+                                <rect key="frame" x="266" y="759" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToTeens">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="ln1-r5-u7X"/>
+                                    <segue destination="nSG-CQ-eNg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="ln1-r5-u7X"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RyV-7P-lVc">
                                 <rect key="frame" x="30" y="443" width="355" height="294"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Guadalupe García McCall
+                                <string key="text">Guadalupe García McCall
 4.7/5
 2011
 
 a teenage girl named Lupita whose mom is stricken with cancer. As Lupita faces the possibility of losing her mom, she holds things together at school by being true to herself amid the opposition of friends and at home by taking care of her siblings. She takes solace in acting in drama class and writing in her notebook under a mesquite tree. Lupita is a strong young woman; pain and grief won't conquer her.
 Under the Mesquite is an empowering story about the testing of family bonds, the strength of a young woman navigating pain and hardship with surprising resilience, and the kind of love that cannot be uprooted.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Under the Mesquite&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNU-QF-kTJ">
+                                <rect key="frame" x="97" y="59" width="221" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MS3-Oc-I8N"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1215,21 +1231,21 @@ Under the Mesquite is an empowering story about the testing of family bonds, the
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zei-f5-U76" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311.59420289855075" y="2362.5"/>
+            <point key="canvasLocation" x="328" y="2557"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mVe-ja-411">
             <objects>
                 <viewController id="xLs-dn-oWA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gwl-eo-Mwk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MakingOurWayHome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUN-8S-BEC">
-                                <rect key="frame" x="95" y="20" width="225" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Making Our Way Home&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUN-8S-BEC">
+                                <rect key="frame" x="95" y="63" width="256" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makingOurWayHome" translatesAutoresizingMaskIntoConstraints="NO" id="InI-5g-cb5">
@@ -1237,27 +1253,27 @@ Under the Mesquite is an empowering story about the testing of family bonds, the
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT2-gd-Ed1">
-                                <rect key="frame" x="233" y="764" width="161" height="40"/>
+                                <rect key="frame" x="282" y="760" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="GoBackToYA">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="d4b-qM-5gP"/>
+                                    <segue destination="UlT-Sg-g2o" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="d4b-qM-5gP"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ejx-BE-fF9">
-                                <rect key="frame" x="34" y="402" width="347" height="289"/>
+                                <rect key="frame" x="34" y="426" width="347" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Blair Imani, Patrisse Khan-Cullors (Foreword), Rachelle Baker (Illustrator)
+                                <string key="text">Blair Imani, Patrisse Khan-Cullors (Foreword), Rachelle Baker (Illustrator)
 4.29/5
 2020
 
 A powerful illustrated history of the Great Migration and its sweeping impact on Black and American culture, from Reconstruction to the rise of hip hop.
 Making Our Way Home explores issues like voting rights, domestic terrorism, discrimination, and segregation alongside the flourishing of arts and culture, activism, and civil rights. Imani shows how these influences shaped America's workforce and wealth distribution by featuring the stories of notable people and events, relevant data, and family histories.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1270,53 +1286,53 @@ Making Our Way Home explores issues like voting rights, domestic terrorism, disc
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GzU-y1-C5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1111.5942028985507" y="2362.5"/>
+            <point key="canvasLocation" x="1113" y="2537"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7UM-J1-8uq">
             <objects>
                 <viewController id="247-HY-LXl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KKy-5c-BZq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81mRAPG-ddL" translatesAutoresizingMaskIntoConstraints="NO" id="5fe-zj-mFt">
                                 <rect key="frame" x="56" y="117" width="303" height="265"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MoreThanSurvive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-bA-DqT">
-                                <rect key="frame" x="111" y="20" width="193" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUz-Vr-bxP">
-                                <rect key="frame" x="262" y="766" width="132" height="40"/>
+                                <rect key="frame" x="296" y="761" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Educators">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="o3r-EH-Rhk"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="o3r-EH-Rhk"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2sm-Xs-Uof">
                                 <rect key="frame" x="20" y="425" width="374" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Bettina L. Love
+                                <string key="text">Bettina L. Love
 4.57/5
 2019
 
 Drawing on personal stories, research, and historical events, an esteemed educator offers a vision of educational justice inspired by the rebellious spirit and methods of abolitionists.
 Bettina Love persuasively argues that educators must teach students about racial violence, oppression, and how to make sustainable change in their communities through radical civic initiatives and movements. “We Want to Do More Than Survive” introduces an alternative to traditional modes of educational reform and expands our ideas of civic engagement and intersectional justice.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;We Want to Do More Than Survive&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-bA-DqT">
+                                <rect key="frame" x="20" y="63" width="374" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S1C-dI-aB9"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1325,53 +1341,53 @@ Bettina Love persuasively argues that educators must teach students about racial
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUr-U3-7e1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="1076.7857142857142"/>
+            <point key="canvasLocation" x="1936" y="1325"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OEk-nd-YrS">
             <objects>
                 <viewController id="zWU-Qt-Vcv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jIp-wS-5p1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GradingForEquity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1g-Fp-rS9">
-                                <rect key="frame" x="112" y="10" width="191" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradingForEquity" translatesAutoresizingMaskIntoConstraints="NO" id="UBe-Rz-RAO">
-                                <rect key="frame" x="68" y="115" width="285" height="276"/>
+                                <rect key="frame" x="65" y="187" width="285" height="276"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pk-wD-MfR">
-                                <rect key="frame" x="262" y="765" width="132" height="40"/>
+                                <rect key="frame" x="296" y="761" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Educators">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="iee-ya-zNq"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="iee-ya-zNq"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-Oe-y0I">
                                 <rect key="frame" x="20" y="436" width="374" height="300.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Joe Feldman
+                                <string key="text">Joe Feldman
 4.32/5
 2018
 
 Here at last--and none too soon--is a resource that delivers the research base, tools, and courage to tackle one of the most challenging and emotionally charged conversations in today's schools: our inconsistent grading practices and the ways they can inadvertently perpetuate the achievement and opportunity gaps among our students.
 Joe Feldman shows us how we can use grading to help students become the leaders of their own learning and lift the veil on how to succeed. . . . This must-have book will help teachers learn to implement improved, equity-focused grading for impact.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Grading for Equity&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1g-Fp-rS9">
+                                <rect key="frame" x="112" y="58" width="210" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OTv-Ka-y9t"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1380,53 +1396,53 @@ Joe Feldman shows us how we can use grading to help students become the leaders 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9e-pR-5qJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="1729.6875"/>
+            <point key="canvasLocation" x="1956.521739130435" y="1917.1875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2wY-xs-t0Q">
             <objects>
                 <viewController id="bkA-nr-Cy0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cYA-zf-5bA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="51Hmnrl5riL._SX333_BO1,204,203,200_" translatesAutoresizingMaskIntoConstraints="NO" id="AAy-bY-0vP">
                                 <rect key="frame" x="20" y="157" width="374" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DesigningGroupwork" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGS-VI-sTy">
-                                <rect key="frame" x="127" y="20" width="160" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZO-W6-ygC">
-                                <rect key="frame" x="262" y="769" width="132" height="40"/>
+                                <rect key="frame" x="296" y="765" width="66" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Educators">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book.closed.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ffd-14-LoY" kind="show" id="Xop-Up-jBm"/>
+                                    <segue destination="Ffd-14-LoY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Xop-Up-jBm"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DV8-I9-Cuh">
                                 <rect key="frame" x="29" y="422" width="357" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Elizabeth G. Cohen
+                                <string key="text">Elizabeth G. Cohen
 3.96/5
 1994
 
 This edition features new material on such topics as skill-building for more advanced students and how to use multiple-ability treatments. The book aims to combine easy-to-follow theory with examples and teaching strategies that are adaptable to any situation.
 “Designing Groupwork: Strategies for the Heterogeneous Classroom” clearly defines the groupwork dilemma and actions educators can take to address it, such as ensuring tasks are groupworthy and proactively disrupting status problems.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Designing Groupwork&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGS-VI-sTy">
+                                <rect key="frame" x="96" y="82" width="222" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KQt-Ls-LmY"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1435,21 +1451,21 @@ This edition features new material on such topics as skill-building for more adv
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cep-cb-4ef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840.5797101449277" y="2362.5"/>
+            <point key="canvasLocation" x="1861" y="2527"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8xJ-VE-rtN">
             <objects>
                 <viewController id="Ffd-14-LoY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgk-mE-4Cx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Educators" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heU-21-Jh3">
                                 <rect key="frame" x="153" y="44" width="108" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0H-56-UgX">
@@ -1460,7 +1476,7 @@ This edition features new material on such topics as skill-building for more adv
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="247-HY-LXl" kind="show" id="JsP-Ci-j3T"/>
+                                    <segue destination="247-HY-LXl" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="JsP-Ci-j3T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq3-3T-iTL">
@@ -1471,7 +1487,7 @@ This edition features new material on such topics as skill-building for more adv
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="zWU-Qt-Vcv" kind="show" id="ylI-dF-nWd"/>
+                                    <segue destination="zWU-Qt-Vcv" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="ylI-dF-nWd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-q7-Xbr">
@@ -1482,27 +1498,29 @@ This edition features new material on such topics as skill-building for more adv
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="bkA-nr-Cy0" kind="show" id="Apu-sk-ceO"/>
+                                    <segue destination="bkA-nr-Cy0" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Apu-sk-ceO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QT-4L-khT">
                                 <rect key="frame" x="273" y="770" width="121" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="u5V-QY-l8s"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="u5V-QY-l8s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4X-ie-iaM">
                                 <rect key="frame" x="20" y="774" width="121" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="oJa-J4-vhM"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="oJa-J4-vhM"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="51Hmnrl5riL._SX333_BO1,204,203,200_" translatesAutoresizingMaskIntoConstraints="NO" id="bwR-94-w3o">
@@ -1530,28 +1548,30 @@ This edition features new material on such topics as skill-building for more adv
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="o3r-EH-Rhk"/>
-        <segue reference="mZl-eO-m14"/>
+        <segue reference="1E9-sa-Ox7"/>
         <segue reference="gut-6K-O6f"/>
-        <segue reference="q7b-HR-ejs"/>
-        <segue reference="kjE-aR-IfZ"/>
+        <segue reference="dta-J5-FXD"/>
+        <segue reference="u5V-QY-l8s"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
-        <image name="2" width="1080" height="1080"/>
-        <image name="2-1" width="465" height="728"/>
         <image name="41aGbeoGlqL._SX341_BO1,204,203,200_" width="343" height="499"/>
         <image name="51Hmnrl5riL._SX333_BO1,204,203,200_" width="335" height="499"/>
         <image name="81Zc8yH7Z1L" width="1513" height="2321"/>
         <image name="81mRAPG-ddL" width="1650" height="2475"/>
         <image name="91Cy8dnm7rL" width="1686" height="2547"/>
         <image name="A1H1juun+BL" width="2560" height="2202"/>
-        <image name="GUEST_48cfe092-c214-4a47-946d-4ee063ef8632" width="488" height="488"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="bookCovers" width="465" height="728"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
+        <image name="frontDesk" width="800" height="1200"/>
         <image name="gradingForEquity" width="1790" height="2560"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="large" width="331" height="500"/>
         <image name="makingOurWayHome" width="352" height="450"/>
+        <image name="text.book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="yesSheCan" width="297" height="450"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
