@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,12 +34,12 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="b8O-Le-Ccb"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="summary" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-Ik-5d7">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SUMMARYYY!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-Ik-5d7">
                                 <rect key="frame" x="143" y="537" width="129" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -503,6 +504,9 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="tvj-q6-h4I" kind="show" id="ghy-yl-SLX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clq-PG-78l">
                                 <rect key="frame" x="161" y="641" width="97" height="40"/>
@@ -511,16 +515,8 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0u-KF-K4x">
-                                <rect key="frame" x="273" y="775" width="121" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nSG-CQ-eNg" kind="show" id="kZb-34-UHE"/>
+                                    <segue destination="4gc-Yb-Gud" kind="show" id="QDi-JN-PUp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d10-ku-1lJ">
@@ -530,6 +526,40 @@
                                 <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="kjE-aR-IfZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-nB-VpQ">
+                                <rect key="frame" x="161" y="244" width="97" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="yNG-Mh-YJT" kind="show" id="CAg-5d-khc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A1H1juun+BL" translatesAutoresizingMaskIntoConstraints="NO" id="FlN-CM-fPI">
+                                <rect key="frame" x="20" y="139" width="280" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="41aGbeoGlqL._SX341_BO1,204,203,200_" translatesAutoresizingMaskIntoConstraints="NO" id="WOb-D4-EjY">
+                                <rect key="frame" x="66" y="591" width="234" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81Zc8yH7Z1L" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-GW-i2Z">
+                                <rect key="frame" x="49" y="314" width="315" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0u-KF-K4x">
+                                <rect key="frame" x="273" y="744" width="121" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nSG-CQ-eNg" kind="show" id="kZb-34-UHE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -564,14 +594,20 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="q26-8P-2Y4" kind="show" id="4jB-8X-BtE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ym-O3-NVJ">
-                                <rect key="frame" x="176" y="428" width="97" height="40"/>
+                                <rect key="frame" x="176" y="428" width="62" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="I9H-iR-uxA" kind="show" id="Ogz-lR-wcu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj6-23-9Rd">
                                 <rect key="frame" x="176" y="647" width="91" height="40"/>
@@ -580,16 +616,8 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Button">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFR-qG-fzn">
-                                <rect key="frame" x="273" y="767" width="121" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="UlT-Sg-g2o" kind="show" id="F93-Jn-x9O"/>
+                                    <segue destination="HZV-zr-zNi" kind="show" id="AV7-Fc-hMi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BN-N3-0Lt">
@@ -601,6 +629,29 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="AtI-Ay-0uo"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GUEST_48cfe092-c214-4a47-946d-4ee063ef8632" translatesAutoresizingMaskIntoConstraints="NO" id="4EN-Ta-9RQ">
+                                <rect key="frame" x="55" y="75" width="360" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFR-qG-fzn">
+                                <rect key="frame" x="293" y="762" width="121" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="UlT-Sg-g2o" kind="show" id="F93-Jn-x9O"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="large" translatesAutoresizingMaskIntoConstraints="NO" id="cf5-xi-P9B">
+                                <rect key="frame" x="118" y="555" width="263" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="91Cy8dnm7rL" translatesAutoresizingMaskIntoConstraints="NO" id="u01-Zx-ctM">
+                                <rect key="frame" x="0.0" y="316" width="353" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SUi-hm-EST"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -720,6 +771,86 @@
             <point key="canvasLocation" x="1044.9275362318842" y="438.61607142857139"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Z1L-9f-QQf">
+            <objects>
+                <viewController id="yNG-Mh-YJT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTL-B8-A0v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A1H1juun+BL" translatesAutoresizingMaskIntoConstraints="NO" id="edn-Ao-AGK">
+                                <rect key="frame" x="20" y="184" width="374" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IAmJazz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoo-aE-niz">
+                                <rect key="frame" x="160" y="44" width="95" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNr-oy-g4E">
+                                <rect key="frame" x="173" y="768" width="221" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToChildren">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="FnM-02-RMt" kind="show" id="exn-EV-7Ox"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6bu-eA-Bud"/>
+                        <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7PL-Kd-vuq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbo-gm-gME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440.57971014492756" y="1066.7410714285713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0kI-s3-i73">
+            <objects>
+                <viewController id="q26-8P-2Y4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BsH-kY-dyc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GUEST_48cfe092-c214-4a47-946d-4ee063ef8632" translatesAutoresizingMaskIntoConstraints="NO" id="VOj-HD-aM3">
+                                <rect key="frame" x="34" y="186" width="347" height="277"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FrontDesk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-jI-GLI">
+                                <rect key="frame" x="151" y="44" width="112" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-yG-5FE">
+                                <rect key="frame" x="273" y="764" width="121" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nSG-CQ-eNg" kind="showDetail" id="4cW-l6-Gjw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tCL-P7-y8l"/>
+                        <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="skJ-tG-PsX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDo-Sm-rNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.59420289855075" y="1076.7857142857142"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="Q37-xc-Ct4">
             <objects>
                 <viewController id="mD7-Gi-p6p" sceneMemberID="viewController">
@@ -727,26 +858,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dearMartin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-ne-vPR">
-                                <rect key="frame" x="166" y="73" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DearMartin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-ne-vPR">
+                                <rect key="frame" x="145" y="20" width="125" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-cw-HMN">
+                                <rect key="frame" x="47" y="124" width="323" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKl-eG-Qdp">
-                                <rect key="frame" x="249" y="717" width="104" height="31"/>
+                                <rect key="frame" x="233" y="760" width="161" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="goBackToYA"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToYA">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="UlT-Sg-g2o" kind="show" id="mZl-eO-m14"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookCovers" translatesAutoresizingMaskIntoConstraints="NO" id="uP4-cw-HMN">
-                                <rect key="frame" x="0.0" y="217" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LL8-8o-AkM"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -755,7 +888,87 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIC-uN-YbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="1078"/>
+            <point key="canvasLocation" x="1131.8840579710145" y="1077.4553571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O5o-IU-6sy">
+            <objects>
+                <viewController id="tvj-q6-h4I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3b-vx-Xbf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81Zc8yH7Z1L" translatesAutoresizingMaskIntoConstraints="NO" id="L9G-Y6-aQr">
+                                <rect key="frame" x="20" y="153" width="363" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsI-if-pLz">
+                                <rect key="frame" x="186" y="44" width="55" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuE-px-2Jy">
+                                <rect key="frame" x="173" y="770" width="221" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToChildren">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="FnM-02-RMt" kind="show" id="dta-J5-FXD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Erk-uM-Qbf"/>
+                        <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pEj-41-ZdU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0g-zx-lJ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442.02898550724643" y="1721.6517857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pzC-tT-ATZ">
+            <objects>
+                <viewController id="I9H-iR-uxA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I6k-P2-mf8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="91Cy8dnm7rL" translatesAutoresizingMaskIntoConstraints="NO" id="UpE-LR-LDM">
+                                <rect key="frame" x="20" y="166" width="374" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OmarRising" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aL-93-Y5d">
+                                <rect key="frame" x="145" y="44" width="125" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-fp-hg3">
+                                <rect key="frame" x="202" y="763" width="192" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToTeens">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nSG-CQ-eNg" kind="show" id="gut-6K-O6f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9v5-4U-MnO"/>
+                        <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OYt-yP-DUn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdD-hC-1dk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.59420289855075" y="1721.6517857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="br9-aL-iFf">
@@ -765,26 +978,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yesSheCan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-Hc-R34">
-                                <rect key="frame" x="177" y="60" width="86" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YesSheCan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBb-Hc-R34">
+                                <rect key="frame" x="149" y="10" width="116" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="ccv-Vs-Gns">
+                                <rect key="frame" x="64" y="121" width="286" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-3F-oZh">
-                                <rect key="frame" x="289" y="761" width="104" height="31"/>
+                                <rect key="frame" x="233" y="767" width="161" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="goBackToYA"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToYA">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="UlT-Sg-g2o" kind="show" id="1E9-sa-Ox7"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yesSheCan" translatesAutoresizingMaskIntoConstraints="NO" id="ccv-Vs-Gns">
-                                <rect key="frame" x="46" y="184" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7fs-w2-mTb"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -793,7 +1008,91 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0q-jZ-5Ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="1722"/>
+            <point key="canvasLocation" x="1113.0434782608697" y="1721.6517857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BDh-sv-hH3">
+            <objects>
+                <viewController id="4gc-Yb-Gud" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HR3-SA-Daa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="41aGbeoGlqL._SX341_BO1,204,203,200_" translatesAutoresizingMaskIntoConstraints="NO" id="94g-NE-RSk">
+                                <rect key="frame" x="20" y="152" width="374" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PaperWishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5X-i7-vcw">
+                                <rect key="frame" x="139" y="44" width="137" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weT-s4-4iF">
+                                <rect key="frame" x="173" y="761" width="221" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToChildren">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="FnM-02-RMt" kind="show" id="q7b-HR-ejs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JGN-z7-rFy"/>
+                        <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wEk-nH-ZoP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FI7-XV-nuf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-442.02898550724643" y="2362.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d1U-Lz-gi3">
+            <objects>
+                <viewController id="HZV-zr-zNi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBz-xg-X2V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="large" translatesAutoresizingMaskIntoConstraints="NO" id="hen-Cm-r29">
+                                <rect key="frame" x="0.0" y="172" width="394" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="large" translatesAutoresizingMaskIntoConstraints="NO" id="nT6-6y-cF3">
+                                <rect key="frame" x="10" y="182" width="394" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UnderTheMesquite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNU-QF-kTJ">
+                                <rect key="frame" x="107" y="44" width="201" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-ur-ldc">
+                                <rect key="frame" x="202" y="763" width="192" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToTeens">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nSG-CQ-eNg" kind="show" id="ln1-r5-u7X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MS3-Oc-I8N"/>
+                        <color key="backgroundColor" red="0.98823523520000001" green="0.94901961089999998" blue="0.9098039269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OAx-k0-nQm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zei-f5-U76" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.59420289855075" y="2362.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mVe-ja-411">
@@ -803,22 +1102,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="makingOurWayHome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUN-8S-BEC">
-                                <rect key="frame" x="161" y="135" width="162" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MakingOurWayHome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUN-8S-BEC">
+                                <rect key="frame" x="95" y="20" width="225" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makingOurWayHome" translatesAutoresizingMaskIntoConstraints="NO" id="InI-5g-cb5">
-                                <rect key="frame" x="67" y="231" width="240" height="128"/>
+                                <rect key="frame" x="20" y="152" width="374" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT2-gd-Ed1">
-                                <rect key="frame" x="289" y="759" width="104" height="31"/>
+                                <rect key="frame" x="233" y="764" width="161" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="goBackToYA"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GoBackToYA">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="UlT-Sg-g2o" kind="show" id="d4b-qM-5gP"/>
                                 </connections>
@@ -831,7 +1132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GzU-y1-C5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113" y="2363"/>
+            <point key="canvasLocation" x="1111.5942028985507" y="2362.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7UM-J1-8uq">
@@ -842,21 +1143,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81mRAPG-ddL" translatesAutoresizingMaskIntoConstraints="NO" id="5fe-zj-mFt">
-                                <rect key="frame" x="0.0" y="194" width="240" height="128"/>
+                                <rect key="frame" x="56" y="117" width="303" height="265"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="moreThanSurvive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-bA-DqT">
-                                <rect key="frame" x="186" y="131" width="133" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MoreThanSurvive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-bA-DqT">
+                                <rect key="frame" x="111" y="20" width="193" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUz-Vr-bxP">
-                                <rect key="frame" x="226" y="675" width="89" height="31"/>
+                                <rect key="frame" x="262" y="766" width="132" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="educators"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Educators">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Ffd-14-LoY" kind="show" id="o3r-EH-Rhk"/>
                                 </connections>
@@ -869,7 +1172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUr-U3-7e1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861" y="1077"/>
+            <point key="canvasLocation" x="1860.8695652173915" y="1076.7857142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OEk-nd-YrS">
@@ -879,22 +1182,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gradingForEquity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1g-Fp-rS9">
-                                <rect key="frame" x="186" y="125" width="131" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GradingForEquity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1g-Fp-rS9">
+                                <rect key="frame" x="112" y="10" width="191" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                 <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradingForEquity" translatesAutoresizingMaskIntoConstraints="NO" id="UBe-Rz-RAO">
-                                <rect key="frame" x="102" y="247" width="240" height="128"/>
+                                <rect key="frame" x="68" y="115" width="285" height="276"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pk-wD-MfR">
-                                <rect key="frame" x="264" y="718" width="89" height="31"/>
+                                <rect key="frame" x="262" y="765" width="132" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="educators"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Educators">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Ffd-14-LoY" kind="show" id="iee-ya-zNq"/>
                                 </connections>
@@ -907,7 +1212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9e-pR-5qJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861" y="1730"/>
+            <point key="canvasLocation" x="1860.8695652173915" y="1729.6875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2wY-xs-t0Q">
@@ -918,21 +1223,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="51Hmnrl5riL._SX333_BO1,204,203,200_" translatesAutoresizingMaskIntoConstraints="NO" id="AAy-bY-0vP">
-                                <rect key="frame" x="20" y="200" width="240" height="128"/>
+                                <rect key="frame" x="20" y="157" width="374" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="designingGroupwork" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGS-VI-sTy">
-                                <rect key="frame" x="186" y="118" width="158" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DesigningGroupwork" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGS-VI-sTy">
+                                <rect key="frame" x="127" y="20" width="160" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.95686274770000002" green="0.70980393890000004" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZO-W6-ygC">
-                                <rect key="frame" x="278" y="738" width="89" height="31"/>
+                                <rect key="frame" x="262" y="769" width="132" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="educators"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Educators">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Ffd-14-LoY" kind="show" id="Xop-Up-jBm"/>
                                 </connections>
@@ -945,7 +1252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cep-cb-4ef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="2363"/>
+            <point key="canvasLocation" x="1840.5797101449277" y="2362.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8xJ-VE-rtN">
@@ -1039,22 +1346,28 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="orq-aG-BE8"/>
-        <segue reference="F93-Jn-x9O"/>
-        <segue reference="Di2-bf-hLx"/>
-        <segue reference="aac-qP-Fgo"/>
-        <segue reference="Tsd-7h-OM0"/>
+        <segue reference="o3r-EH-Rhk"/>
+        <segue reference="mZl-eO-m14"/>
+        <segue reference="4cW-l6-Gjw"/>
+        <segue reference="exn-EV-7Ox"/>
+        <segue reference="kjE-aR-IfZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
         <image name="2" width="1080" height="1080"/>
         <image name="2-1" width="465" height="728"/>
+        <image name="41aGbeoGlqL._SX341_BO1,204,203,200_" width="343" height="499"/>
         <image name="51Hmnrl5riL._SX333_BO1,204,203,200_" width="335" height="499"/>
+        <image name="81Zc8yH7Z1L" width="1513" height="2321"/>
         <image name="81mRAPG-ddL" width="1650" height="2475"/>
+        <image name="91Cy8dnm7rL" width="1686" height="2547"/>
+        <image name="A1H1juun+BL" width="2560" height="2202"/>
+        <image name="GUEST_48cfe092-c214-4a47-946d-4ee063ef8632" width="488" height="488"/>
         <image name="bookCovers" width="465" height="728"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
         <image name="gradingForEquity" width="1790" height="2560"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="large" width="331" height="500"/>
         <image name="makingOurWayHome" width="352" height="450"/>
         <image name="yesSheCan" width="297" height="450"/>
         <systemColor name="systemOrangeColor">
